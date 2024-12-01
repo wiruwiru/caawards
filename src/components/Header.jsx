@@ -28,16 +28,7 @@ export default function Header() {
 
   const menuItems = [
     { href: "/acerca", label: "Información" },
-    { href: "/sponsors", label: "Sponsors" },
-    {
-      href: "/picantes",
-      label: "Ganadores",
-      subItems: [
-        { href: "/picantes/2023", label: "2023" },
-        { href: "/picantes/2022", label: "2022" },
-        { href: "/picantes/2021", label: "2021" },
-      ],
-    },
+    { href: "/picantes", label: "Picantes", },
     {
       href: "/ternas",
       label: "Ternas",
@@ -45,6 +36,21 @@ export default function Header() {
         { href: "/ternas/2023", label: "2023" },
         { href: "/ternas/2022", label: "2022" },
         { href: "/ternas/2021", label: "2021" },
+        { href: "/ternas/2020", label: "2020" },
+        { href: "/ternas/2019", label: "2019" },
+        { href: "/ternas/2018", label: "2018" },
+      ],
+    },
+    {
+      href: "/sponsors",
+      label: "Sponsors",
+      subItems: [
+        { href: "/sponsors/2023", label: "2023" },
+        { href: "/sponsors/2022", label: "2022" },
+        { href: "/sponsors/2021", label: "2021" },
+        { href: "/sponsors/2020", label: "2020" },
+        { href: "/sponsors/2019", label: "2019" },
+        { href: "/sponsors/2018", label: "2018" },
       ],
     },
   ]
