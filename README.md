@@ -1,7 +1,8 @@
 # Coscu Army Awards
 Proyecto de pagina para los premios Coscu Army Awards, realizado en NextJS 15.
-
 > Es un proyecto open source, dedicado a la comunidad sin fines de lucro
+
+Preview: https://caawards.lucauy.dev
 
 ## ¿Como puedo iniciar el proyecto?
 Deben instalar primero las dependencias, con el comando: npm install --legacy-peer-deps
