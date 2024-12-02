@@ -47,7 +47,7 @@ const TernasPage = () => {
       <div className="relative min-h-screen">
         <div className="fixed inset-0 z-0">
           <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <video className="w-full h-full object-cover filter blur-lg" src="/assets/video/background_video.webm" autoPlay loop muted playsInline />
+          <video className="w-full h-full object-cover filter blur-lg" src="/assets/video/background_video.webm" autoPlay loop muted playsInline disablePictureInPicture controlsList="nodownload noplaybackrate" controls={false} />
         </div>
         
         <main className="relative z-10 px-4 py-16 md:py-24">
