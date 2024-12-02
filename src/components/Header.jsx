@@ -29,9 +29,7 @@ export default function Header() {
   const menuItems = [
     { href: "/acerca", label: "Información" },
     { href: "/picantes", label: "Picantes", },
-    {
-      href: "/ternas",
-      label: "Ternas",
+    { href: "/ternas/2023", label: "Ternas",
       subItems: [
         { href: "/ternas/2023", label: "2023" },
         { href: "/ternas/2022", label: "2022" },
