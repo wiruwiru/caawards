@@ -9,7 +9,7 @@ export function PicanteModelCanvas() {
         <div className="w-[300px] h-[300px] mx-auto">
             <Canvas
                 camera={{
-                    position: [0, 15, 3],
+                    position: [1, 15, 0],
                     fov: 45,
                     near: 0.1,
                     far: 1000

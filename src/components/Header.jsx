@@ -64,18 +64,13 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md font-[-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif]">
+    <header className="fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <Image 
-              src="/assets/images/mainlogo.png" 
-              alt="CA Awards" 
-              width={60} 
-              height={60} 
-              className="mr-4" />
+            <Image src="/assets/images/mainlogo.png" alt="CA Awards" width={80} height={60} className="mr-4" />
           </Link>
-          <nav className="hidden md:block">
+          <nav className="hidden md:flex ml-6">
             <ul className="flex items-center space-x-6">
               {menuItems.map((item) => (
                 <li key={item.href} className="relative group"
@@ -115,54 +110,68 @@ export default function Header() {
               ))}
             </ul>
           </nav>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 ml-auto">
             <Image src="/assets/images/flag_argentina.svg" alt="CA Awards" width={30} height={30} />
-            <button onClick={toggleMenu} className="md:hidden text-white">
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            {!isMenuOpen && (
+              <button onClick={toggleMenu} className="md:hidden text-white">
+                <Menu size={24} />
+              </button>
+            )}
           </div>
         </div>
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden bg-black/40 backdrop-blur-md">
-          <ul className="container mx-auto px-4 py-2 space-y-2 flex flex-col items-center">
-            {menuItems.map((item) => (
-              <li key={item.href}>
-                {item.subItems ? (
-                  <div>
-                    <button 
-                      onClick={() => toggleSubmenu(item.href)}
-                      className="w-full inline-flex items-center justify-center text-white hover:text-gray-300 transition-colors text-base py-2">
-                      <span>{item.label}</span>
-                      <ChevronDown 
-                        className={`ml-1 w-4 h-4 transition-transform ${
-                          openSubmenu === item.href ? 'rotate-180' : '' }`} />
-                    </button>
-                    <ul className={`space-y-2 overflow-hidden transition-all duration-200 w-full ${ openSubmenu === item.href ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0' }`}>
-                      {item.subItems.map((subItem) => (
-                        <li key={subItem.href} className="border-b border-gray-700/50 last:border-none">
-                          <Link 
-                            href={subItem.href} 
-                            className="text-white hover:text-gray-300 transition-colors text-sm block py-2 text-center w-full"
-                            onClick={toggleMenu}>
-                            {subItem.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <Link 
-                    href={item.href} 
-                    className="text-white hover:text-gray-300 transition-colors text-base block py-2 text-center"
-                    onClick={toggleMenu}>
-                    {item.label}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
+        <div className="md:hidden fixed inset-0 bg-black/90 backdrop-blur-sm flex flex-col">
+          <div className="container mx-auto px-4 py-4 flex justify-end">
+            <button onClick={toggleMenu} className="text-white">
+              <X size={24} />
+            </button>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-start pt-8">
+            <Link href="/" className="mb-8">
+              <Image src="/assets/images/mainlogo.png" alt="CA Awards" width={100} height={60} />
+            </Link>
+            <ul className="container mx-auto px-4 py-2 space-y-6 flex flex-col items-center">
+              {menuItems.map((item) => (
+                <li key={item.href}>
+                  {item.subItems ? (
+                    <div>
+                      <button 
+                        onClick={() => toggleSubmenu(item.href)}
+                        className="w-full inline-flex items-center justify-center text-white hover:text-gray-300 transition-colors text-xl py-2">
+                        <span>{item.label}</span>
+                        <ChevronDown 
+                          className={`ml-1 w-4 h-4 transition-transform ${
+                            openSubmenu === item.href ? 'rotate-180' : '' }`} />
+                      </button>
+                      <ul className={`space-y-4 overflow-hidden transition-all duration-200 w-full ${
+                        openSubmenu === item.href ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}>
+                        {item.subItems.map((subItem) => (
+                          <li key={subItem.href}>
+                            <Link 
+                              href={subItem.href} 
+                              className="text-white/80 hover:text-white transition-colors text-lg block py-2 text-center w-full"
+                              onClick={toggleMenu}>
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : (
+                    <Link 
+                      href={item.href} 
+                      className="text-white hover:text-gray-300 transition-colors text-xl block py-2 text-center"
+                      onClick={toggleMenu}>
+                      {item.label}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
     </header>
