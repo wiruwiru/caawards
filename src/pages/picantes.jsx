@@ -32,11 +32,11 @@ export default function Index() {
                 <div className="space-y-2">
                   <div>
                     <h3 className="text-xl text-gray-400">Streamer del año</h3>
-                    <p className="text-xl">Proximamente</p>
+                    <p className="text-xl">DavoXeneize - David Quint</p>
                   </div>
                   <div>
                     <h3 className="text-xl text-gray-400">Streamer Revelación</h3>
-                    <p className="text-xl">Proximamente</p>
+                    <p className="text-xl">mazzatomas - Tomás Massa</p>
                   </div>
                 </div>
               </div>
