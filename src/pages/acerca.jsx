@@ -14,8 +14,9 @@ export default function Index() {
       <Header />
 
       <div className="relative min-h-screen">
-        <div className="fixed inset-0 z-0">
-            <video className="w-full h-full object-cover filter blur-lg" src="/assets/video/background_video.webm" autoPlay loop muted playsInline />
+      <div className="fixed inset-0 z-0">
+        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <video className="w-full h-full object-cover filter blur-lg" src="/assets/video/background_video.webm" autoPlay loop muted playsInline />
         </div>
         
         <main className="relative z-10 px-4 py-16 md:py-24">
@@ -63,6 +64,11 @@ export default function Index() {
                 monumento histórico de Argentina: el Teatro Colón, contó con más de 200 mil espectadores 
                 y más de 2.500 invitados. En esta edición el premio al streamer del año se lo llevó Iván 
                 "Spreen" Buhajeruk.
+              </p>
+
+              <p>
+                En 2023, se realizó la sexta edición en el estadio Luna Park, En esta oportunidad el premio al 
+                streamer del año se lo llevó David "DavooXeneize" Quint.
               </p>
             </div>
           </div>

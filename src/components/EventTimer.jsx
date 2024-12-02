@@ -67,7 +67,7 @@ export function EventTimer() {
         <div className="flex items-center gap-6">
           {!isLive && (
             <>
-              <Timer className="w-5 h-5 text-[#53FC18]" />
+              <Timer className="w-5 h-5 text-[#D4AF37]" />
               <div className="flex gap-4 text-white">
                 <TimeUnit value={timeLeft.days} label="DÍAS" />
                 <TimeUnit value={timeLeft.hours} label="HS" />

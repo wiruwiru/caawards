@@ -18,6 +18,7 @@ const buttonVariants = cva(
         secondary:
           "bg-neutral-100 text-neutral-900 shadow-sm hover:bg-neutral-100/80 dark:bg-neutral-800 dark:text-neutral-50 dark:hover:bg-neutral-800/80",
         ghost: "hover:bg-neutral-100 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50",
+        golden: "bg-[#D4AF37] text-black shadow hover:bg-[#B4941F] dark:bg-[#D4AF37] dark:text-black dark:hover:bg-[#B4941F]",
         link: "text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50",
       },
       size: {

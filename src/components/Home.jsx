@@ -51,7 +51,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}>
-            <Button asChild className="bg-[#D4AF37] hover:bg-[#B4941F] text-black font-bold px-8 py-6 text-lg">
+            <Button asChild variant="golden" className="text-black font-bold px-8 py-6 text-lg">
               <a href="/acerca" rel="noopener noreferrer">Saber más</a>
             </Button>
           </motion.div>

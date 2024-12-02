@@ -15,7 +15,8 @@ export default function Footer() {
             <span className="sr-only">Instagram</span>
           </a>
         </div>
-        <p className="text-sm text-white">Coscu Army Awards Copyright &copy; {new Date().getFullYear()} | Design by <Link href="https://lucauy.dev" target="_blank" rel="nofollow" className="text-withe hover:text-[#FFB800] transition-colors">Luca.</Link></p>
+        <p className="text-sm text-white">Coscu Army Awards | Copyright &copy; {new Date().getFullYear()}</p>
+        {/* <p className="text-sm text-white">Coscu Army Awards Copyright &copy; {new Date().getFullYear()} | Design by <Link href="https://lucauy.dev" target="_blank" rel="nofollow" className="text-withe hover:text-[#FFB800] transition-colors">Luca.</Link></p> */}
       </div>
     </footer>
   )

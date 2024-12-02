@@ -15,7 +15,8 @@ export default function Index() {
 
       <div className="relative min-h-screen">
         <div className="fixed inset-0 z-0">
-          <video className="w-full h-full object-cover filter blur-lg" src="/assets/video/background_video.webm" autoPlay loop muted playsInline />
+        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <video className="w-full h-full object-cover filter blur-lg" src="/assets/video/background_video.webm" autoPlay loop muted playsInline />
         </div>
         
         <main className="relative z-10 px-4 py-16 md:py-24">
