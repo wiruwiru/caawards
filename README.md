@@ -3,6 +3,10 @@ Proyecto de pagina para los premios Coscu Army Awards, realizado en NextJS 15.
 
 > Es un proyecto open source, dedicado a la comunidad sin fines de lucro
 
+## ¿Como puedo iniciar el proyecto?
+Deben instalar primero las dependencias, con el comando: npm install --legacy-peer-deps
+Luego simplemente ejecutan el comando: npm run dev
+
 ## TO-DO
 - [x] Realizar las paginas de Información y Picantes.
 - [x] Realizar las paginas de Ternas.
