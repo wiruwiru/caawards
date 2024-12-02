@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { PicanteModelCanvas } from "@/components/three/PicanteModelCanvas";
 import { EventTimer } from "./EventTimer";
 import { Sponsors } from "./Sponsors";
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}>
             <Button asChild variant="golden" className="text-black font-bold px-8 py-6 text-lg">
-              <a href="/acerca" rel="noopener noreferrer">Saber más</a>
+              <Link href="/acerca" rel="noopener noreferrer">Saber más</Link>
             </Button>
           </motion.div>
         </div>
