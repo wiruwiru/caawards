@@ -11,6 +11,7 @@ Luego simplemente ejecutan el comando: npm run dev
 ## TO-DO
 - [x] Realizar las paginas de Información y Picantes.
 - [x] Realizar las paginas de Ternas.
+- [x] Realizar la paginas de Sponsors.
 - [x] Mejorar el estilo del Header.
 - [x] Mejorar el estilo del Footer y agregar las redes sociales de los CA Awards.
 - [ ] Cambiar el modelo actual del picante por el real usado en los awards.
